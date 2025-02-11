@@ -2,23 +2,24 @@
 <html lang="pt-br">
 
 <head>
-<!-- Fontes do Google -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
-    <!-- Fonte do Google - Poppins -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Simone Gonzaga">
+    <meta name="author" content="Rafael Queiróz">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
-  
-    <!-- Link folha de estilo -->
+
+    <!--  Link para a Folha de Estilos CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Portfólio da Simone</title>
 </head>
 
@@ -55,7 +56,6 @@
         <!-- Seção home -->
         <section id="home" class="flex home_container">
 
-
             <!-- Texto da Seção Home -->
             <article id="home_texto" class="flex home_content">
 
@@ -78,32 +78,8 @@
         </section>
 
         <!-- Seção sobre -->
-        <section  class="flex sobre_container">
+        <section id="about" class="flex sobre_container">
 
-            <!-- Imagem da Seção Sobre -->
-            <img 
-                src="./assets/img/user_02.svg" 
-                alt="Foto do Perfil do Github"
-            >
-
-            <!-- Texto da Seção Sobre -->
-            <article id="home_sucess">
-                <h1>Sobre mim</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil magni doloremque sint, qui facere fugit sequi optio molestiae sunt! Maiores sapiente atque nulla mollitia earum delectus nostrum natus architecto?</p>
-
-                <!-- Detalhes do Github -->
-                <div class="flex sobre_github">
-                    <a 
-                        href="https://github.com/si-gonz" 
-                        target="_blank" class="botao"
-                    >
-                        Github
-                    </a>
-                    <p>200 Seguidores</p>
-                    <p>20 Repositórios</p>
-                </div>
-
-            </article>
         </section>
 
         <!-- Seção de Contato -->
@@ -111,32 +87,29 @@
 
             <article id="redes_sociais" class="contato_content">
                 <h4>Contate-me</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis, deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam officia obcaecati perspiciatis.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis,
+                    deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam
+                    officia obcaecati perspiciatis.</p>
 
-            <!-- Redes Sociais -->
-            <div id="icones_redes_sociais" class="social_container">
-                <a href="https://www.linkedin.com/in/simonegonzagag/" target="_blank">
-                    <img 
-                        src="./assets/img/linkedin.svg"
-                        alt="Logo do LinkedIn"
-                    >
-                </a>
-                <a href="https://github.com/si-gonz" target="_blank">
-                    <img 
-                        src="./assets/img/github.svg"
-                        alt="Logo do Github"
-                    >
-                </a>
-                <a href="https://www.instagram.com/si.gonz/" target="_blank">
-                    <img 
-                        src="./assets/img/instagram.svg"
-                        alt="Logo do Instagram"
-                    >
-                </a>
-            </div>
+                <!-- Redes Sociais -->
+                <div id="icones_redes_sociais" class="social_container">
+                    <a href="" target="_blank">
+                        <img src="./assets/img/linkedin.svg" alt="Logo do LinkedIn" class="social_icon">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./assets/img/github.svg" alt="Logo do Github" class="social_icon">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./assets/img/instagram.svg" alt="Logo do Instagram" class="social_icon">
+                    </a>
+                </div>
+            </article>
 
             <!-- Formulário de Contato -->
-            <form action="" method="POST">
+            <form action="https://formsubmit.co/516684cad8db7f99a09d967165cb7547" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome</label>
                 <input id="nome" type="text" name="nome" placeholder="Digite o seu nome">
@@ -153,17 +126,21 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
 
-                <button type="submit"class="botao"  onclick="window.open('./sucess.html', '_blank')">Enviar</button>
+                <button type="submit" class="botao">Enviar</button>
             </form>
 
-            </section>
+        </section>
 
-            </main>
+    </main>
 
     <!-- Rodapé da Página -->
     <footer>
         Feito com 🧡 por Simone Gonzaga - 2025
     </footer>
+
+    <!-- Script JavaScript -->
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
